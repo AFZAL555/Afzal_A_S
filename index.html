@@ -21,7 +21,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- =======================================================
@@ -509,7 +508,7 @@
                     <h6 class="category">Address</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="#" style="color: rgb(12, 12, 11);">Home Address</a></h3>
+                <h3 class="card-title"><a href="#" style="color: rgb(20, 19, 19);">Home Address</a></h3>
                 <p class="card-description " style="align-items: center;">
                   <Address >
                     <b >Afzalmanzil,Thahamukku,Thattarkonam, Kollam-691005,Kerala,India</b>
@@ -530,9 +529,9 @@
                     <h6 class="category">Mail</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="#">Google mail</a></h3><br>
+                <h3 class="card-title"><a href="#">Google mail</a></h3>
                 <p class="card-description">
-                  <center><b >afzalofficial555@gmail.com</b></center><br>.
+                  <center><b style="color: rgb(14, 11, 13);">afzalofficial555@gmail.com</b></center><br><br>.
                 </p>
               </div>
             </div>
@@ -555,28 +554,6 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="title-box-2 pt-4 pt-md-0">
-              <h5 class="title-left">
-                Get in Touch
-              </h5>
-            </div>
-            <div class="more-info">
-              <p class="lead">
-                Have an idea or a concept that really excite you? Let's turn that idea into reality. Shoot me a message.
-
-              </p>
-              
-            </div>
-            <div class="socials">
-              <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100006959175127"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                <li><a href="https://www.instagram.com/babavoss_05/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                
-                <li><a href="https://www.linkedin.com/in/afzal-a-s-867327222"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section><!-- End Blog Section -->
@@ -596,39 +573,71 @@
                         Say Hello!
                       </h5>
                     </div>
-                    <div class="col-lg-8 mt-5 mt-lg-0">
+                    <div>
+                      
+                      <form onclick="validate()" id="submit-form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <span class="details">Name</span>
+                                <input id="Name" type="text" class="form-control" name="Name" placeholder="Enter the Name" onkeyup="namevalidate()">
+                                <span class="details" id="namefield"></span>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <span class="details">Email</span>
+                                <input type="email" class="form-control" name="email" onkeyup="emailvalidate()" id="email" placeholder="Your mail Id">
+                                <span class="details" id="emailfield"></span>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <span class="details">Mobile</span>
+                                <input type="text" class="form-control" name="phoneNumber" onkeyup="Phonevalidate()" maxlength="10"  id="phNumber" placeholder="+91">
+                                <span class="details" id="phfield"></span>
+                              </div>
+                            </div>
 
-                      <form class="row g-3  mx-auto" id="submit-form" style="max-width: 600px;">
-          
-                        <div class="col-12 ">
-                          <input  type="text" placeholder="Name" name="name" class="form-control border-0 shadow-sm" id="name" maxlength="24" >
-                          <p style="color: red;" id="error1"></p>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea class="form-control" name="comment" rows="5" placeholder="Message" id="tell" onkeyup="messagevalidate()"></textarea>
+                                
+                                <span class="details" id="tellbox"></span>
+                              </div>
+                            </div>
                         </div>
-                        <div class="col-12 mx-auto">
-                          <input type="tel" placeholder="Phone" name="phone" oninput="this.value=this.value.replace(/[^\d]/,'')" class="form-control border-0 shadow-sm" id="phone"   >
-                          <p style="color: red;" id="error3"></p>
+    
+                        <div class="col-md-12 text-center my-2">
+                          <button type="submit" value="submit"class="button button-a button-big button-rouded">Send Message</button>
+                        
                         </div>
-                          <div class="col-12 mx-auto" >
-                            <input type="email" placeholder="Email" name="email" oninput="this.value = this.value.replace(/\s/g,'');" class="form-control border-0 shadow-sm" id="email">
-                            <p style="color: red;" id="error2"></p>
-                          </div>
-                          
-                          <div class="col-md-12 mb-3">
-                            <textarea class="form-control  border-0 shadow-sm" id="exampleFormControlTextarea1" placeholder="message" name="message" rows="3" style="max-height: 50; min-height: 50;"></textarea>
-                            <p style="color: red;" id="error4"></p>
-                          </div>
-                        <div class="col-12 text-center">
-                          <button type="submit" class="btn btn-primary">submit</button>
-                        </div>
-                      </form>
-          
+                    </form>
+
                     </div>
-          
                   </div>
-          
-                </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
                     </div>
-                  
+                    <div class="more-info">
+                      <p class="lead">
+                        Have an idea or a concept that really excite you? Let's turn that idea into reality. Shoot me a message.
+
+                      </p>
+                      
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100006959175127"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/babavoss_05/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        
+                        <li><a href="https://www.linkedin.com/in/afzal-a-s-867327222"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -645,10 +654,15 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Afzal A S</strong>. All Rights Reserved</p>
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
             <div class="credits">
-              
-             
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
           </div>
         </div>
@@ -670,176 +684,98 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-
 </body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     
 
 <script>
-
-     //----------------------Form validation-------------------------------------//
-
-  
         
-   let checkname = false;
-   let checkemail = false;
-   let checkphone = false;
-   let checkmessage = false;
+  function validate(){
 
+      if(namevalidate()==true && emailvalidate()==true && Phonevalidate()==true && messagevalidate()==true ){
+          
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbw89M79UCVjQGyZKD7lPgOFtjq62dtP4zp_nE9YJ7xpUdb7KH7PHl22hLz87VYpbH4/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
 
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              
+          },
+          error:function (err){
+              alert("Something Error")
 
-
-
- function checkname1() {
-   let namevalue = $("#name").val()
-   let nameRegex = /^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
-   if (namevalue == "") {
-     $("#error1").html("Name is mandatory!")
-   }
-   else if(namevalue.length<3 || namevalue.length>20 ){
-     checkname = true
-     $("#error1").html("please enter valid name")
-   }
-   else if (namevalue.match(nameRegex)) {
-     checkname = true
-     $("#error1").html("")
-   }
- }
-
- function checkemail1() {
-   let emailvalue = $("#email").val()
-   let emailRegex = /^[a-zA-Z0-9.!#$%&’+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/
-   if (emailvalue == "") {
-     $("#error2").html("Email is mandatory!")
-   }
-   else if (emailvalue.match(emailRegex)) {
-     checkemail = true
-     $("#error2").html("")
-   }
-   else {
-     $("#error2").html("Invalid email!")
-     checkemail = false
-   }
- }
- $('#email').keypress(function( email ) {
-   if(email.which === 32) 
-   return false;
-   });
-
+          }
+      })
  
+      }
 
- function checkphone1() {
-   let phonevalue = $("#phone").val()
-   let phoneRegex = /[0-9]{10}/;
-   let messageRegex = /^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
-   if (phonevalue == "") {
-     $("#error3").html("Mobile number is mandatory!")
-   }
-   else if (phonevalue.match(phoneRegex)) {
-     checkphone = true
-     $("#error3").html("")
-   }
-   else if(phonevalue.match(messageRegex)){
-     checkphone=false
-     $("#error3").html("please enter a valid mobile number")
-   }
-   else if(phonevalue.length==10){
-     checkphone = true
-     $("#error3").html("")
-   }
-   else{
-     $("#error3").html("please enter 10 digit number")
-     checkphone=false
-   }
- }
- 
+  }
+  
+  
 
-
- function checkmessage1() {
-   let messagevalue = $("#exampleFormControlTextarea1").val()
-   let messageRegex = /^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
-   if (messagevalue == "") {
-     $("#error4").html("Enter Something!")
-   }
-   else if (messagevalue.match(messageRegex)) {
-     checkmessage = true
-     $("#error4").html("")
-   }
-   else {
-     $("#error4").html("")
-     checkmessage = false
-   }
-
- }
-
- $('#name').keypress(function(event){
-  if (
-      !event.key.match(/^[A-Za-z ]+$/) ||
-      (this.value.slice(-1) == ' ' && event.key == ' ')||
-      (this.value == '' && event.key == ' ')
-    ) {
-      event.preventDefault()
-    }
-   })
+      function Phonevalidate(){
+          var no= $('#phNumber').val();
+          var phPattern= /^\d{10}$/
+          if(no==""){
+          $('#phfield').html("Enter Phone number");
+              return false
+          }else if(no.match(phPattern)){
+          $('#phfield').html("");
+              return true
+          }else{
+          $('#phfield').html("Enter 10 digits (0-9)");
+              return false
+          }
+      }
+      function messagevalidate(){
+                var vartell= $('#tell').val();
+                if(vartell==""){
+                $('#tellbox').html("Enter Something....");
+                    return false
+                }else{
+                    $('#tellbox').html("");
+                    return true;
+                }
+            }
 
 
- $(document).ready(function () {
-    $("#name").keyup(function () {
-     checkname1()
-    })
+    function emailvalidate(){
+      var email = $('#email').val();
+      var pattern = /^[^]+@[^]+\.[a-z]{2,3}$/
+      if(email==""){
+          $('#emailfield').html("Enter the Email");
+              return false
+          }else if(email.match(pattern)){
+          $('#emailfield').html("");
+              return true
+          }else{
+          $('#emailfield').html("Enter valid email-d (abcd@gmail.com)");
+              return false
+          }
+      }
 
-    $("#email").keyup(function () {
-     checkemail1()
-    })
-
-    $("#phone").keyup(function () {
-     checkphone1()
-    })
-    $("#exampleFormControlTextarea1").keyup(function () {
-     checkmessage1()
-    })
-
-   });
-   //--------------------submit form-------------------------------//
-       
-$("#submit-form").submit((e)=>{
- 
- e.preventDefault();
- console.log($("#submit-form").serialize());
- if(checkname & checkemail & checkmessage &checkphone ){
-   console.log("jsdgfkjvhsjbh")
- $.ajax({
-     url:"https://script.google.com/macros/s/AKfycbzeWQ9c7clGsF8M-opx2PBGQ-4fg23DxDahfPJygFdgg-_8lWUs32krPzNUdif-gSuF1g/exec",
-     data:$("#submit-form").serialize(),
-     method:"post",
-     success:function (response){
-         alert("Form submitted successfully!!!")
-         window.location.reload()
-         
-     },
-     error:function (err){
-         alert("Something Error")
-
-     }
- })
-}
-else{
- alert("Please fill!!!!")
-
- checkname1()
- checkphone1()
- checkmessage1()
- checkemail1()
-
-}
-})
-
+  function namevalidate(){
+      var name = $('#Name').val();
+      var latterpat=/^[A-Za-z]+$/
+      
+      if(name==""){
+          $('#namefield').html("Enter the Name");
+              return false
+          }else if(name.match(latterpat)){
+          $('#namefield').html("");
+              return true
+          }else{
+          $('#namefield').html("Enter only letters (A-Z,a-z)");
+              return false
+          }
+      }
+  
+  
 
 </script>
+
 
 
 
