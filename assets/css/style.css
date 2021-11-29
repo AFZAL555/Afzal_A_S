@@ -12,22 +12,7 @@ h5,
 h6 {
   color: #1e1e1e;
 }
-#namefield{
-  font-size: small;
-  color: red;
-}
-#emailfield{
-  font-size: small;
-  color: red;
-}
-#phfield{
-  font-size: small;
-  color: red;
-}
-#tellbox{
-  font-size: small;
-  color: red;
-}
+
 
 a {
   color: #1e1e1e;
@@ -1301,4 +1286,20 @@ footer .credits {
 }
 footer .credits a {
   color: #fff;
+}
+#namefield{
+  font-size: small;
+  color: red;
+}
+#emailfield{
+  font-size: small;
+  color: red;
+}
+#phfield{
+  font-size: small;
+  color: red;
+}
+#tellbox{
+  font-size: small;
+  color: red;
 }
