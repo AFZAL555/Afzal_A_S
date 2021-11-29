@@ -1287,19 +1287,19 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
-#namefield{
+namefield{
   font-size: small;
   color: red;
 }
-#emailfield{
+emailfield{
   font-size: small;
   color: red;
 }
-#phfield{
+phfield{
   font-size: small;
   color: red;
 }
-#tellbox{
+tellbox{
   font-size: small;
   color: red;
 }
