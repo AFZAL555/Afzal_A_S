@@ -13,7 +13,6 @@ h6 {
   color: #1e1e1e;
 }
 
-
 a {
   color: #1e1e1e;
   text-decoration: none;
@@ -725,7 +724,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# About
+# About 
 --------------------------------------------------------------*/
 .about-mf .box-shadow-full {
   padding-top: 4rem;
@@ -1005,7 +1004,7 @@ a:hover {
     padding-left: 0rem;
   }
 }
-
+/*
 .php-email-form .error-message {
   display: none;
   color: #fff;
@@ -1065,7 +1064,7 @@ a:hover {
 .php-email-form button[type=submit]:hover {
   background: #3393ff;
 }
-
+*\
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1287,19 +1286,19 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
-namefield{
+#namefield{
   font-size: small;
   color: red;
 }
-emailfield{
+#emailfield{
   font-size: small;
   color: red;
 }
-phfield{
+#phfield{
   font-size: small;
   color: red;
 }
-tellbox{
+#tellbox{
   font-size: small;
   color: red;
 }
