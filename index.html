@@ -63,7 +63,7 @@
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Hi, I'm Afzal</h1>
+          <h1 class="hero-title mb-4">Hi, I'm Afzal A S</h1>
           <p class="hero-subtitle"><span class="typed" data-typed-items="Self Taught Person,Developer,Social Worker"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
@@ -161,18 +161,18 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row" >
+          <div class="col-md-4" >
             <div class="service-box">
-              <div class="service-ico">
+              <div class="service-ico" >
                 <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
               </div>
-              <div class="service-content">
+              <div class="service-content ">
                 <h2 class="s-title">Full Stack Web Apps</h2>
                 <p class="s-description text-center">
                   Full Stack is a layer of software or web development consisting of the front-end and the back-end portions of an application. Front-end is what the users will see or interact with on your application. Back-end part is what users do not see, such as application's logic, database, server, etc. 
-                  I offer Full stack web app with NodeJs Express as backend and EJS as frontend which makes seamless dynamic web pages.
-                            
+                  
+                        
                 </p>
               </div>
             </div>
@@ -187,8 +187,7 @@
                 <p class="s-description text-center">
                   Web development is the work involved in developing a website for the Internet or an intranet. 
                   Web development can range from developing a simple single static page of plain text to complex web applications, 
-                  electronic businesses, and social network services.Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.
-                   It is the creation of an application that works over the internet i.e. websites.
+                  electronic businesses, and social network services.
                 </p>
               </div>
             </div>
@@ -204,11 +203,7 @@
                   React (also known as React.js or ReactJS) is an open-source JavaScript library for building user interfaces.
                     It is maintained by Facebook and a community of individual developers and companies. 
                     React can be used as a base in the development of single-page or mobile applications. 
-                      However, React is only concerned with rendering data to the DOM, and so creating React applications usually
-                        requires the use of additional libraries for state management and routing.
-                         Redux and React Router are respective examples of such libraries.
-                        I can make Frontend aswell as Full Stack React app with Firebase as Backend.
-                       I can also make React Apps with NextJs.
+                     
                 </p>
               </div>
             </div>
@@ -225,9 +220,7 @@
                                 Each page is coded in HTML and displays the same information to every visitor.
                                  Static sites are the most basic type of website and are the easiest to create.
                                   Unlike dynamic websites, they do not require any Web programming or database design. 
-                                  A static site can be built by simply creating a few HTML pages and publishing them to
-                                   a Web server. I can make Static and Portfolio website with Bootstrap, Semantic ui ,
-                                    material ui.
+                                  
                 </p>
               </div>
             </div>
@@ -242,8 +235,7 @@
                 <p class="s-description text-center">
                   MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node.js. 
                                 It is designed to make the development process smoother and easier.
-                                 Each of these 4 powerful technologies provides an end-to-end framework for the developers to work in 
-                                 and each of these technologies play a big part in the development of web applications.
+                                 Each of these 4 powerful technologies provides an end-to-end framework for the developers.
                 </p>
               </div>
             </div>
@@ -499,6 +491,7 @@
                 <h3 class="card-title"><a href="#">Phone</a></h3>
                 <p class="card-description">
                   <center><b>+91 8714314754</b></center>
+                  <center><b>+91 7012466923</b></center>
                 </p>
               </div>
             </div>
@@ -674,7 +667,7 @@
           $('#phfield').html("");
               return true
           }else{
-          $('#phfield').html("Enter 10 digits");
+          $('#phfield').html("Enter 10 digits (0-9)");
               return false
           }
       }
@@ -709,7 +702,7 @@
       var name = $('#Name').val();
       var latterpat=/^[A-Za-z]+$/
       
-      if(name==""){
+      if(name==" "){
           $('#namefield').html("Enter the Name");
               return false
           }else if(name.match(latterpat)){
